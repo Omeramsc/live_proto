@@ -418,3 +418,8 @@ body.concert-on .concert-section {
   max-height: 90%;
   object-fit: contain;
 }
+
+.watermark img {
+  height: auto;
+  width: 45%;
+}
