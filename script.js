@@ -52,6 +52,4 @@
 		$("body").removeClass("concert-on");
 	});
 
-
-
-})(jQuery); 
+})(jQuery);
