@@ -8,7 +8,6 @@
 		$("body").removeClass("about-on");
 	});
 
-
 	//Contact
 	$(".contact-text").on('click', function () {
 		$("body").addClass("contact-on");

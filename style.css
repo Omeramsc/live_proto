@@ -117,6 +117,22 @@ body.concert-on .hero-section {
   -webkit-transition-delay: 0ms;
   transition-delay: 0ms;
 }
+
+.concert-text {
+  position: absolute;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  bottom: 100%;
+  cursor: pointer;
+  z-index: 2;
+  transform: translateY(-50%);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
 .about-text {
   position: absolute;
   font-size: 17px;
