@@ -1,192 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <title>Omer Amsalem - Live Photography</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-         />
-      <link rel="stylesheet" href="./style.css" />
-   </head>
-   <div class="hero-section">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Omer Amsalem - Live Photography</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="hero-section">
       <div class="about-text hover-target">about</div>
       <div class="contact-text hover-target">contact</div>
       <div class="section-center">
-         <div class="container-fluid">
-            <div class="row justify-content-center">
-               <div class="col-lg-6 col-sm-6 col-8 text-center" id="watermark">
-                  <img src="static/main/watermark_white.png" class="img-fluid" alt="Omer Logo"/>
-               </div>
-               <div class="col-12 text-center mb-2">
-                  <div class="dancing">live photography</div>
-               </div>
-               <div class="col-12 text-center mt-4 mt-lg-5">
-                  <p>
-                     <span class="concert-text concert hover-target">Portfolio</span>
-                  </p>
-               </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-sm-6 col-8 text-center" id="watermark">
+              <img
+                src="static/main/watermark_white.png"
+                class="img-fluid"
+                alt="Omer Logo"
+              />
             </div>
-         </div>
+            <div class="col-12 text-center mb-2">
+              <div class="dancing">live photography</div>
+            </div>
+            <div class="col-12 text-center mt-4 mt-lg-5">
+              <p>
+                <span class="concert-text concert hover-target">Portfolio</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="about-section">
+    </div>
+    <div class="about-section">
       <div class="about-close hover-target"></div>
       <div class="section-center">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-12 text-center">
-                  <img src="static/main/aboutme.jpg" alt="" />
-               </div>
-               <div class="col-lg-8 text-center mt-4">
-                  <p>
-                     A passionate photographer dedicated to capturing the energy and
-                     essence of live music. Showcased here are moments that bring
-                     forward the concert experience to life - allowing others to
-                     relive the exhilaration and atmosphere of these unforgettable
-                     performances..
-                  </p>
-               </div>
-               <div class="col-12 text-center">
-                  <p><span>Omer Amsalem</span></p>
-               </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <img src="static/main/aboutme.jpg" alt="" />
             </div>
-         </div>
+            <div class="col-lg-8 text-center mt-4">
+              <p>
+                A passionate photographer dedicated to capturing the energy and
+                essence of live music. Showcased here are moments that bring
+                forward the concert experience to life - allowing others to
+                relive the exhilaration and atmosphere of these unforgettable
+                performances..
+              </p>
+            </div>
+            <div class="col-12 text-center">
+              <p><span>Omer Amsalem</span></p>
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="contact-section">
+    </div>
+    <div class="contact-section">
       <div class="contact-close hover-target"></div>
       <div class="section-center">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-12 text-center">
-                  <a href="#" class="hover-target">omeramsc@gmail.com</a>
-               </div>
-               <div class="col-12 text-center social mt-4">
-                  <a
-                     href="https://www.instagram.com/omerams.live/"
-                     class="hover-target"
-                     >instagram</a
-                     >
-                  <a href="https://www.facebook.com/ChibaMeta/" class="hover-target"
-                     >facebook</a
-                     >
-               </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <a href="#" class="hover-target">omeramsc@gmail.com</a>
             </div>
-         </div>
+            <div class="col-12 text-center social mt-4">
+              <a
+                href="https://www.instagram.com/omerams.live/"
+                class="hover-target"
+                >instagram</a
+              >
+              <a href="https://www.facebook.com/ChibaMeta/" class="hover-target"
+                >facebook</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="concert-section">
+    </div>
+    <div class="concert-section">
       <div class="concert-close hover-target"></div>
       <div class="container">
-         <div class="row justify-content-center">
-            <div class="col-12 text-center">
-               <h3>Portfolio</h3>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h3>Portfolio</h3>
+          </div>
+
+          <div
+            class="row"
+            id="gallery"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/1.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="0"
+                alt="First portfolio photo"
+              />
             </div>
             <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/1.jpg" class="portfolio-photo">
-               <img src="static/portfolio/1.jpg" alt="" />
-               </a>
+              <img
+                src="static/portfolio/2.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="1"
+                alt="Second portfolio photo"
+              />
             </div>
             <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/2.jpg" class="portfolio-photo">
-               <img src="static/portfolio/2.jpg" alt="" />
-               </a>
+              <img
+                src="static/portfolio/3.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="2"
+                alt="Third portfolio photo"
+              />
             </div>
             <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/3.jpg" class="portfolio-photo">
-               <img src="static/portfolio/3.jpg" alt="" />
-               </a>
+              <img
+                src="static/portfolio/4.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="3"
+                alt="Fourth portfolio photo"
+              />
             </div>
             <div class="col-md-6 col-lg-4">
-               <a href="#" class="portfolio-photo">
-               <img src="static/portfolio/4.jpg" alt="" />
-               </a>
+              <img
+                src="static/portfolio/5.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="4"
+                alt="Fifth portfolio photo"
+              />
             </div>
             <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/5.jpg" class="portfolio-photo">
-               <img src="static/portfolio/5.jpg" alt="" />
-               </a>
+              <img
+                src="static/portfolio/6.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="5"
+                alt="Sixth portfolio photo"
+              />
             </div>
             <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/6.jpg" class="portfolio-photo">
-               <img src="static/portfolio/6.jpg" alt="" />
-               </a>
+              <img
+                src="static/portfolio/7.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="6"
+                alt="Seventh portfolio photo"
+              />
             </div>
             <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/7.jpg" class="portfolio-photo">
-               <img src="static/portfolio/7.jpg" alt="" />
-               </a>
+              <img
+                src="static/portfolio/8.JPG"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="7"
+                alt="Eighth portfolio photo"
+              />
             </div>
             <div class="col-md-6 col-lg-4">
-              <a href="static/portfolio/8.JPG" class="portfolio-photo">
-                <img src="static/portfolio/8.JPG" alt="" />
+              <img
+                src="static/portfolio/9.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="8"
+                alt="Ninth portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/10.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="9"
+                alt="Tenth portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/11.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="10"
+                alt="Eleventh portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/12.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="11"
+                alt="Twelfth portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/13.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="12"
+                alt="Thirteenth portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/14.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="13"
+                alt="Fourteenth portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/15.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="14"
+                alt="Fifteenth portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/16.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="15"
+                alt="Sixteenth portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/17.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="16"
+                alt="Seventeenth portfolio photo"
+              />
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img
+                src="static/portfolio/18.jpg"
+                class="portfolio-photo"
+                data-target="#carouselExample"
+                data-slide-to="17"
+                alt="Eighteenth portfolio photo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal start -->
+    <div
+      class="modal"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content" style="background-color: #1f2029;">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="color: white"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExample"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
+                <li data-target="#carouselExample" data-slide-to="3"></li>
+                <li data-target="#carouselExample" data-slide-to="4"></li>
+                <li data-target="#carouselExample" data-slide-to="5"></li>
+                <li data-target="#carouselExample" data-slide-to="6"></li>
+                <li data-target="#carouselExample" data-slide-to="7"></li>
+                <li data-target="#carouselExample" data-slide-to="8"></li>
+                <li data-target="#carouselExample" data-slide-to="9"></li>
+                <li data-target="#carouselExample" data-slide-to="10"></li>
+                <li data-target="#carouselExample" data-slide-to="11"></li>
+                <li data-target="#carouselExample" data-slide-to="12"></li>
+                <li data-target="#carouselExample" data-slide-to="13"></li>
+                <li data-target="#carouselExample" data-slide-to="14"></li>
+                <li data-target="#carouselExample" data-slide-to="15"></li>
+                <li data-target="#carouselExample" data-slide-to="16"></li>
+                <li data-target="#carouselExample" data-slide-to="17"></li>
+                <li data-target="#carouselExample" data-slide-to="18"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/1.jpg"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/2.jpg"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/3.jpg"
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/4.jpg"
+                    alt="Fourth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/5.jpg"
+                    alt="Fifth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/6.jpg"
+                    alt="Sixth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/7.jpg"
+                    alt="Seventh slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/8.jpg"
+                    alt="Eighth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/9.jpg"
+                    alt="Nineth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/10.jpg"
+                    alt="Tenth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/11.jpg"
+                    alt="Eleventh slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/12.jpg"
+                    alt="Twelfth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/13.jpg"
+                    alt="Thirteenth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/14.jpg"
+                    alt="Fourteenth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/15.jpg"
+                    alt="Fifteenth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/16.jpg"
+                    alt="Sixteenth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/17.jpg"
+                    alt="Seventeenth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="static/portfolio/18.jpg"
+                    alt="Eighteenth slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExample"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExample"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
               </a>
             </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/9.jpg" class="portfolio-photo">
-               <img src="static/portfolio/9.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/10.jpg" class="portfolio-photo">
-               <img src="static/portfolio/10.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/11.jpg" class="portfolio-photo">
-               <img src="static/portfolio/11.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/12.jpg" class="portfolio-photo">
-               <img src="static/portfolio/12.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/13.jpg" class="portfolio-photo">
-               <img src="static/portfolio/13.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/14.jpg" class="portfolio-photo">
-               <img src="static/portfolio/14.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/15.jpg" class="portfolio-photo">
-               <img src="static/portfolio/15.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/16.jpg" class="portfolio-photo">
-               <img src="static/portfolio/16.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/17.jpg" class="portfolio-photo">
-               <img src="static/portfolio/17.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/18.jpg" class="portfolio-photo">
-               <img src="static/portfolio/18.jpg" alt="" />
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-               <a href="static/portfolio/19.jpg" class="portfolio-photo">
-               <img src="static/portfolio/19.jpg" alt="" />
-               </a>
-            </div>
-         </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="cursor" id="cursor"></div>
-   <div class="cursor2" id="cursor2"></div>
-   <div class="cursor3" id="cursor3"></div>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="./script.js"></script>
-   </body>
+    </div>
+    <!-- modal end -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
