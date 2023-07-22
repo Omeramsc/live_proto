@@ -19,9 +19,22 @@
 	//portfolio
 	$(".concert").on('click', function () {
 		$("body").addClass("concert-on");
+		console.log("aehhh")
 	});
 	$(".concert-close").on('click', function () {
 		$("body").removeClass("concert-on");
+		console.log("ahahaha?")
 	});
-
+  
 })(jQuery);
+
+function insertPortfolio() {
+	fetch('./portfolio.html')
+	  .then(response => response.text())
+	  .then(data => {
+		document.getElementById('portfolio-section').innerHTML = data;
+	  })
+	  .catch(error => {
+		console.error('Error fetching header:', error);
+	  });
+  }
