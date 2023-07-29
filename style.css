@@ -118,6 +118,30 @@ body.concert-on .hero-section {
   transition-delay: 0ms;
 }
 
+@keyframes scaleAndDisappear {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+body.concert-on .portfolio-btn {
+  animation: scaleAndDisappear 1s forwards;
+}
+
+/* TODO: Make the portfolio button follow the body animation instead of dissappearing */
+body.about-on .portfolio-btn {
+  opacity: 0;
+}
+body.contact-on .portfolio-btn {
+  opacity: 0;
+}
+
+
 .concert-text {
   position: absolute;
   font-size: 17px;
@@ -434,3 +458,30 @@ body.concert-on .concert-section {
   max-height: 90%;
   object-fit: contain;
 } 
+
+.portfolio-position {
+  margin-top: -2rem;
+  margin-left: -1.5rem;
+}
+
+.portfolio-btn span:before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 50%;
+  height: 45px;
+  width: 30px;
+  margin-left: -15px;
+  z-index: -1;
+  background-image: url("static/icn/bt-d.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+  opacity: 0.2;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.portfolio-btn span:hover:before {
+  opacity: 1;
+  bottom: 5px;
+}
