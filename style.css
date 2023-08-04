@@ -485,3 +485,12 @@ body.concert-on .concert-section {
   opacity: 1;
   bottom: 5px;
 }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 40px 0;
+}
